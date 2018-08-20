@@ -2,7 +2,7 @@
 FROM ubuntu:16.04
 
 RUN apt-get update && \
-    apt-get -y install git wget sudo build-essential libgflags-dev libsnappy-dev zlib1g-dev libbz2-dev liblz4-dev libzstd-dev && \
+    apt-get -y install git wget sudo g++-4.8 build-essential libgflags-dev libsnappy-dev zlib1g-dev libbz2-dev liblz4-dev libzstd-dev && \
     apt-get -y install vim jq
 
 # install go1.10.3
